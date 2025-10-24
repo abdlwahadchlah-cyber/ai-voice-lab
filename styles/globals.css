@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* حركة الموجة الصوتية */
+@keyframes pulse-wave {
+  0%, 100% {
+    transform: scaleY(0.5);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scaleY(1.5);
+    opacity: 1;
+  }
+}
+
+.animate-pulse-wave > div {
+  animation: pulse-wave 1s infinite ease-in-out;
+}
